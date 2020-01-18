@@ -33,6 +33,41 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../Mogo/images/intro.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__suptitle {
+  font-size: 72px;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro__title {
+  font-size: 150px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.intro__title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 60px auto;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Header */
@@ -97,4 +132,64 @@ h1, h2, h3, h4, h5, h6 {
    z-index: 1;
   opacity: 0;
   transition: opacity .1s linear;
+}
+
+/* Button */
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  border: 3px solid #fff;
+  padding: 12px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+/* Slider */
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.slider__item {
+  width: 23%;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-top: 3px solid #fff;
+  opacity: 0.7;
+  position: relative;
+}
+
+.slider__num {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.slider__item.active {
+  opacity: 1;
+}
+
+.slider__item.active::before {
+  content: "";
+  display: block;
+  width: 70;
+  height: 3px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 1;
+  background-color: #f38181;
 }
