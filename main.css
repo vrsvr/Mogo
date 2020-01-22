@@ -199,6 +199,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 80px 0;
 }
 
+.section--devices {
+  background: url("../Mogo/images/devices-bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-bottom: 0;
+}
+
 .section__header {
   text-align: center;
   width: 100%;
@@ -352,4 +359,25 @@ justify-content: space-between;
   font-size: 15px;
   color: #999;
   font-family: 'Roboto', sans-serif;
+}
+
+
+/* Devices */
+
+.devices {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.devices__item {
+  display: block;
+}
+
+.devices__item--iphone {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 1;
 }
