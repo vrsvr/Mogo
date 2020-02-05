@@ -826,6 +826,14 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 65px;
 }
 
+.footer__title {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 14px;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
 .footer__logo {
   font-size: 46px;
   font-weight: 700;
@@ -875,7 +883,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__inner {
   margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.footer__col--first {
+  width: 40%;
+}
+
+.footer__col--second {
+  width: 29%;
+}
+
+.footer__col--third {
+  width: 22%;
+}
+
+
 
 /* Subscribe */
 
@@ -897,6 +921,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px;
   height: 40px;
   line-height: 1.1;
+  border-right: 0;
+}
+
+.subscribe__input:focus {
+  outline: 0;
+  border-color: #95e1d3;
 }
 
 .subscribe__input::placeholder {
@@ -916,9 +946,77 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 12px 30px;
   line-height: 1.1;
-  transition: background .2s linear;   
+  transition: background .2s linear;
 }
 
 .subscribe__btn:hover {
   background-color: #74c7b8;
+}
+
+.subscribe__btn:focus {
+  outline: 0;
+}
+
+/* Blogs */
+.blogs {
+
+}
+
+.blogs__item {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.blogs__content {
+  padding-left: 20px;
+}
+
+.blogs__title {
+  color: #333;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5s;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.blogs__title:hover {
+  text-decoration: underline;
+}
+
+.blogs__date {
+  font-size: 13px;
+  color: #999;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Insta */
+
+.insta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.insta__item {
+  width: 32.3333%;
+  border-bottom: 1px solid #fff;
+}
+
+.insta__item img {
+  display: block;
+}
+
+/* Copyright */
+
+.copyright {
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
 }
