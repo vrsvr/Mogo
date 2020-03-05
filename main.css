@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.page {
+  overflow: hidden;
+}
 
 /* Container */
 
@@ -44,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background: url("../Mogo/images/intro.jpg") center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 72px;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .intro__title {
@@ -162,35 +165,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn:hover {
   color: #333;
   background-color: #fff;
-}
-
-/* Slider */
-
-.slider {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  margin-top: 30px;
-}
-
-.slider__item {
-  width: 23%;
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 20px 0;
-  border-top: 3px solid #fff;
-  opacity: 0.7;
-  position: relative;
-}
-
-.slider__num {
-  font-size: 24px;
-  font-weight: 700;
-  padding-right: 5px;
-}
-
-.slider__item.active {
-  opacity: 1;
 }
 
 /* Section */
@@ -539,6 +513,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews__photo {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -601,6 +576,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Logos */
 
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.logos__item {
+  padding: 0 15px;
+}
+
+.logos__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* Works */
 
@@ -719,6 +710,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blog__item {
@@ -900,8 +892,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__inner {
   margin-bottom: 65px;
+  margin-left: -15px;
+  margin-right: -15px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__col {
+  padding: 0 15px;
 }
 
 .footer__col--first {
@@ -1020,12 +1019,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .insta__item {
-  width: 32.3333%;
+  width: 33%;
   border-bottom: 1px solid #fff;
 }
 
 .insta__item img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Copyright */
@@ -1046,6 +1047,11 @@ h1, h2, h3, h4, h5, h6 {
   .intro__suptitle {
     font-size: 52px;
   }
+
+  .reviews__text {
+    font-size: 20px;
+  }
+
 }
 
 @media (max-width: 990px) {
@@ -1080,6 +1086,51 @@ h1, h2, h3, h4, h5, h6 {
 
   .services__item--border {
     border-bottom: 0;
+  }
+
+  .reviews {
+    padding: 0 60px;
+  }
+
+  .reviews__photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .reviews__item {
+    padding-left: 175px;
+  }
+
+  .clients {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .clients__item {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .clients__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__col--first {
+    width: 100%;
+  }
+
+  .footer__col--second,
+  .footer__col--third {
+    width: 50%;
+  }
+
+  .insta {
+    justify-content: flex-start;
+  }
+
+  .insta__item {
+    width: auto;
+    border-right: 1px solid #fff;
   }
 
 }
@@ -1139,6 +1190,51 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
   }
 
+  .reviews__photo {
+    position: static;
+    margin: 0 auto 20px;
+  }
+
+  .reviews__item {
+    padding-left: 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+
+  .reviews__author {
+    font-size: 20px;
+  }
+
+  .works {
+    flex-wrap: wrap;
+  }
+
+  .works__col {
+    flex: none;
+    width: 50%;
+  }
+
+  .blog {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .blog__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .blog__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__col--first,
+  .footer__col--second,
+  .footer__col--third {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1187,6 +1283,70 @@ h1, h2, h3, h4, h5, h6 {
     width: 180px;
     bottom: -50px;
     right: -60px;
+  }
+
+  .reviews {
+    padding: 0;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .logos__img {
+    margin: 0 auto;
+  }
+
+  .works {
+    flex-wrap: wrap;
+  }
+
+  .works__col {
+    flex: none;
+    width: 100%;
+  }
+
+  .clients__photo {
+    position: static;
+  }
+
+  .clients__item {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .clients__text::before {
+    margin: 15px auto;
+  }
+
+  .subscribe {
+    flex-wrap: wrap;
+    max-width: none;
+  }
+
+  .subscribe__input {
+    margin-bottom: 10px;
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .subscribe__input,
+  .subscribe__btn {
+    width: 100%;
+  }
+
+  .blogs__img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .blogs__title {
+    font-size: 10px;
   }
 
 }
