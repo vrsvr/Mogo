@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="C:\Users\Rifat\Documents\Mogo\main.css">
+  <link rel="stylesheet" href="..\Mogo\main.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/39d87d6a5b.js" crossorigin="anonymous"></script>
   <title>Mogo</title>
@@ -11,7 +11,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <div class="header__logo">MoGo</div>
@@ -24,12 +24,15 @@
           <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i></a>
           <a class="nav__link" href="#"><i class="fas fa-search"></i></a>
         </nav>
+        <button class="nav-toggle" type="button">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
       </div>
     </div>
   </header>
 
   <div class="page">
-    <div class="intro">
+    <div class="intro" id="intro">
       <div class="container">
         <div class="intro__inner">
           <h2 class="intro__suptitle">Creative Template</h2>
@@ -37,7 +40,6 @@
           <a class="btn" href="#">Learn More</a>
         </div>
       </div>
-
     </div>
 
     <section class="section">
