@@ -1119,6 +1119,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
+/* Media */
+
 @media (max-width: 1230px) {
   .intro__title {
     font-size: 120px;
@@ -1223,6 +1225,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .intro {
     min-height: 650px;
+    height: auto;
   }
 
 .nav-toggle {
