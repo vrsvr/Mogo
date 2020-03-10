@@ -1139,6 +1139,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
   }
 
+  .wedo {
+    justify-content: space-between;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 990px) {
@@ -1173,6 +1178,19 @@ h1, h2, h3, h4, h5, h6 {
 
   .services__item--border {
     border-bottom: 0;
+  }
+
+  .wedo {
+    flex-direction: column;
+  }
+
+  .wedo__img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .wedo__item {
+    width: 100%;
   }
 
   .reviews {
@@ -1299,15 +1317,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
   }
 
-  .wedo__img {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .wedo__item {
-    width: 100%;
-  }
-
   .reviews__photo {
     position: static;
     margin: 0 auto 20px;
@@ -1413,66 +1422,66 @@ h1, h2, h3, h4, h5, h6 {
     height: 13px;
     top: 43%;
     right: 10px;
-
-
-    .logos {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .logos__item {
-      width: 50%;
-      margin-bottom: 20px;
-    }
-
-    .logos__img {
-      margin: 0 auto;
-    }
-
-    .works {
-      flex-wrap: wrap;
-    }
-
-    .works__col {
-      flex: none;
-      width: 100%;
-    }
-
-    .clients__photo {
-      position: static;
-    }
-
-    .clients__item {
-      padding-left: 0;
-      text-align: center;
-    }
-
-    .clients__text::before {
-      margin: 15px auto;
-    }
-
-    .subscribe {
-      flex-wrap: wrap;
-      max-width: none;
-    }
-
-    .subscribe__input {
-      margin-bottom: 10px;
-      border-right: 1px solid #e7e7e7;
-    }
-
-    .subscribe__input,
-    .subscribe__btn {
-      width: 100%;
-    }
-
-    .blogs__img {
-      width: 80px;
-      height: 50px;
-    }
-
-    .blogs__title {
-      font-size: 10px;
-    }
-
   }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .logos__img {
+    margin: 0 auto;
+  }
+
+  .works {
+    flex-wrap: wrap;
+  }
+
+  .works__col {
+    flex: none;
+    width: 100%;
+  }
+
+  .clients__photo {
+    position: static;
+  }
+
+  .clients__item {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .clients__text::before {
+    margin: 15px auto;
+  }
+
+  .subscribe {
+    flex-wrap: wrap;
+    max-width: none;
+  }
+
+  .subscribe__input {
+    margin-bottom: 10px;
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .subscribe__input,
+  .subscribe__btn {
+    width: 100%;
+  }
+
+  .blogs__img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .blogs__title {
+    font-size: 10px;
+  }
+
+}
